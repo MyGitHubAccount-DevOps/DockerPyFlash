@@ -11,4 +11,8 @@ RUN pip install --upgrade pip --user
 
 COPY . /flask
 
-ENTRYPOINT [ "makefile" ]
+EXPOSE 5001
+
+ENTRYPOINT [ "python" ]
+
+CMD [ "app.py" ]
