@@ -1,0 +1,11 @@
+version: '3'
+services:
+  flask_web:
+    image: pyflasksemaphore
+    container_name: semaphore-pyflask-docker_flasksemaphore_1
+    command: ["run"]
+    working_dir: /flask
+    ports:
+      - "5001:5001"
+    volumes:
+      - .:/opt/
